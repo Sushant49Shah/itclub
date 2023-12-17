@@ -1,0 +1,302 @@
+/* Font stuffs */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Eczar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@200;300;400&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo&family=Bebas+Neue&family=DM+Sans:opsz,wght@9..40,300&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200&family=Roboto:wght@300&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Raleway", sans-serif;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.paddings {
+  padding: 1.5rem;
+}
+.innerWidth {
+  width: 100%;
+}
+
+.flexCenter {
+  display: flex;
+  row-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flexStart {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flexEnd {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flexColCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.felxColStart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.flexColEnd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@media (min-width: 1536px) {
+  .innerWidth {
+    max-width: 1280px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 640px) {
+  .paddings {
+    padding: 4rem;
+  }
+}
+
+@media (min-width: 1280px), (min-width: 768px) {
+  .paddings {
+    padding: 2rem;
+  }
+}
+
+#about-us {
+  animation: slide-in 2s ease-in-out;
+  font-size: 30px;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (min-width: 768px) {
+  /* Alumni Swiper  */
+  #alumni-swiper .alumni-img {
+    overflow: hidden;
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+  }
+}
+/* Responsive */
+@media (max-width: 642px) {
+  #app,
+  #home,
+  #navbar,
+  #aboutPage,
+  #alumni,
+  #events,
+  #formsM,
+  #notice,
+  #support {
+    width: 100vw;
+    overflow: hidden;
+  }
+  #navbar {
+    height: 60px;
+  }
+  #navbar .logo {
+    width: 20vw;
+  }
+
+  .pc {
+    display: none;
+  }
+  .mob {
+    display: block;
+  }
+  .alumniSwiper {
+    width: 100vw;
+    height: auto;
+    padding: 20px;
+  }
+  .alumni-img img {
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+  }
+  .name {
+    font-size: 2.8rem;
+    line-height: 3rem;
+  }
+  .post {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .numb {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+  .Aemail {
+    font-size: 1.1rem;
+    line-height: 2.5rem;
+    padding-bottom: 20px;
+  }
+  .swip {
+    padding-bottom: 50px;
+  }
+  .eventsSlider {
+    width: 90vw;
+  }
+  .eventsSlider .alumniContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5vw 40vw;
+  }
+  .swip-pag {
+    display: none;
+  }
+  .notice-title {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  /* Forms  */
+  #formsM input,
+  textarea {
+    height: 30px;
+    width: 80vw;
+    text-decoration: none;
+    outline: none;
+    border: 2px solid #dadada;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    font-size: 1.1vh;
+    background: transparent;
+    border: 1.4px solid #dadada;
+    border-radius: 5px;
+  }
+  #formsM .gender input {
+    height: 15px;
+    position: relative;
+    left: -200px;
+  }
+
+  #formsM .input-box {
+    margin: 20px 10px;
+  }
+  #formsM .forms-details {
+    width: 75vw;
+    margin-bottom: 10px;
+    font-weight: 500;
+    display: block;
+    font-size: 1.8vh;
+  }
+  #formsM textarea {
+    height: 15vh;
+    width: 80vw;
+    padding: 10px 10px;
+    background: transparent;
+    border: 1.4px solid #dadada;
+    border-radius: 5px;
+    font-size: 1.1vh;
+  }
+  #formsM input:focus,
+  #formsM input:valid {
+    border-bottom-color: #9b59b6;
+    border-width: 2px;
+  }
+  #formsM textarea:focus,
+  #formsM textarea:valid {
+    border-bottom-color: #9b59b6;
+    border-width: 2px;
+  }
+
+  #formsM button {
+    padding: 0;
+    border: 1px solid #dadada;
+    width: 15vh;
+    height: 5vh;
+    display: inline-block;
+    background: linear-gradient(135deg, #578eb0, #774489);
+    font-size: 1.8vh;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  #formsM span {
+    font-size: 15px;
+  }
+
+  #formsM .payment span {
+    font-size: 2vw;
+    color: royalblue;
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid rgb(179, 202, 245);
+    width: auto;
+    padding: 10px;
+  }
+  #formsM .payment input {
+    width: fit-content;
+    text-decoration: none;
+    padding: 5px;
+    height: 40px;
+  }
+
+  .titlekumbhM {
+    color: #b2b2dd;
+    font-family: "Kumbh Sans";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: -0.48px;
+  }
+
+  /* contact us forms  */
+  #msg-formsM input {
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    width: 80vw;
+    font-size: 1.8vh;
+    padding: 10px;
+  }
+  #msg-formsM label {
+    font-size: 2.5vh;
+    font-weight: 500;
+  }
+  #msg-formsM #messageM {
+    width: 80vw;
+    height: 20vh;
+    padding: 10px;
+    font-size: 1.5vh;
+  }
+}

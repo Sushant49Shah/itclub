@@ -1,0 +1,200 @@
+.home-main {
+  color: white;
+  /* position: relative; */
+  padding-bottom: 2rem;
+}
+
+.home-left {
+  margin-right: 50%;
+  padding: 40px;
+  gap: 3rem;
+}
+.title {
+  font-weight: 600;
+  font-size: 3.8rem;
+  line-height: 4rem;
+}
+.home-right {
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 20px;
+  margin-left: 50%;
+}
+.image-section {
+  height: 35rem;
+  width: 30rem;
+  overflow: hidden;
+  border-radius: 15rem 15rem 15rem 15rem;
+  border: 8px solid rgba(29, 25, 25, 0.217);
+}
+.image-section > img {
+  widows: 100%;
+  height: 100%;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(50px);
+  }
+}
+
+.animate-from-right {
+  animation-name: slideInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+.titlekumbh {
+  color: #b2b2dd;
+  font-family: "Kumbh Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 56px;
+  letter-spacing: -0.48px;
+}
+
+/* Forms  */
+#forms input,
+textarea {
+  height: 40px;
+  width: 100%;
+  text-decoration: none;
+  outline: none;
+  border: 2px solid #dadada;
+  padding: 5px 20px;
+  margin-bottom: 30px;
+  font-size: 1vw;
+  background: transparent;
+  border: 2px solid #dadada;
+  border-radius: 5px;
+}
+#forms .gender input {
+  height: 15px;
+  cursor: pointer;
+}
+#forms .input-box {
+  margin: 20px 10px;
+}
+#forms .forms-details {
+  margin-bottom: 10px;
+  font-weight: 600;
+  display: block;
+  font-size: 1.5vw;
+}
+#forms textarea {
+  height: 20vh;
+  width: 100%;
+  padding: 10px 20px;
+  background: transparent;
+  border: 2px solid #dadada;
+  border-radius: 5px;
+  font-size: 1.2vw;
+}
+#forms input:focus,
+#forms input:valid {
+  border-bottom-color: #9b59b6;
+  border-width: 3px;
+}
+#forms textarea:focus,
+#forms textarea:valid {
+  border-bottom-color: #9b59b6;
+  border-width: 3px;
+}
+
+#forms button {
+  padding: 0;
+  border: 2px solid #dadada;
+  width: 250px;
+  height: 50px;
+  display: inline-block;
+  background: linear-gradient(135deg, #578eb0, #774489);
+  font-size: 1.2vw;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+#forms button:hover {
+  background: linear-gradient(135deg, #774489, #578eb0);
+}
+#forms span {
+  font-size: 15px;
+}
+
+#forms .payment span{
+  color: royalblue;
+  background: transparent;
+  border-radius: 20px;
+  border: 1.7px solid rgb(179, 202, 245);
+  width: auto;
+}
+#forms .payment input{
+  width: fit-content;
+  text-decoration: none;
+  padding: 10px;
+  height: 52px;
+
+}
+/* Events  */
+.events-swiper img {
+  width: 550px;
+  height: 450px;
+  overflow: hidden;
+}
+
+/* Contact Us - Forms */
+#msg-forms input {
+  background: transparent;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  width: 60vw;
+  font-size: 16px;
+  padding: 10px;
+}
+#msg-forms .mem-name input {
+  width: 20vw;
+}
+#msg-forms label {
+  font-size: 20px;
+  font-weight: 500;
+}
+#msg-forms #message{
+  height: 15vh;
+  padding: 10px;
+}
+
+/* About Us  */
+#aboutPage img{
+  border: 3px solid #fff;
+  border-radius: 15px;
+  width: 35vw;
+  height: 34vh;
+}
+
+/* Animation */
+#about-us {
+  animation: slide-in 2s ease-in-out;
+  font-size: 30px;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Navbar  */
+#close .close{
+  border: 1.3px solid #fff;
+  border-radius: 15px;
+}
